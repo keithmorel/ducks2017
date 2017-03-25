@@ -11,11 +11,12 @@ import {
 // Component inputs
 import TestCom from './components/TestCom/TestCom';
 import CompassCom from './components/CompassCom/CompassCom';
+import ChatroomCom from './components/ChatroomCom/ChatroomCom';
 
 export default class ducks2017 extends Component {
   render() {
     return (
-        <TestCom />
+        <ChatroomCom />
     );
   }
 }
