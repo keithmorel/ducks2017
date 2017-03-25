@@ -1,0 +1,3 @@
+rootProject.name = 'ducks2017'
+
+include ':app'
