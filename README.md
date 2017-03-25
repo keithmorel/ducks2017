@@ -1,15 +1,11 @@
 # OONO - Your One ON One Chatting Application
 
----
-
 ## Table of Contents
 1. Introduction
 2. Group Members
 3. What is OONO?
 4. Technology Stack
 5. Credits
-
----
 
 ### Introduction
   Our introduction of the project goes here.
