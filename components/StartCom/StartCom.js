@@ -9,6 +9,7 @@ import {
   StyleSheet
 } from 'react-native';
 
+import Popup from 'react-native-popup';
 
 import { Dial } from 'react-native-dial';
 
@@ -25,9 +26,30 @@ export default class StartCom extends Component {
       degree : r.toFixed(1),
     }, function () {
       if((r > 170) && (r < 190)){
-        this.props.navigator.push({
-          id: 'ChatroomCom'
-        })
+        this.popup.confirm({
+    			title: 'You have a new One on One!',
+    			content: ['Alan wants to chat?', 'Do you accept?'],
+    			ok: {
+    				text: 'Connect',
+    				style: {
+    					color: 'green'
+    				},
+    				callback: () => {
+              this.props.navigator.push({
+                id: 'ChatroomCom'
+              })
+    				},
+    			},
+    			cancel: {
+    				text: 'Ignore',
+    				style: {
+    					color: 'red'
+    				},
+    				callback: () => {
+    					this.popup.alert('Chat With Alan Ignored.');
+    				},
+    			},
+    		});
       }
     }.bind(this));
   }
@@ -80,6 +102,7 @@ export default class StartCom extends Component {
         <Dial
           onValueChange={(r) => this.changeValue(r)}
         />
+        <Popup ref={popup => this.popup = popup }/>
       </View>
     );
   }
