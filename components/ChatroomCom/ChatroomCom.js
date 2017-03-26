@@ -18,14 +18,44 @@ export default class ChatroomCom extends Component {
     this.setState({
       messages: [
         {
-          _id: 1,
-          text: 'Hello developer',
+          _id: 4,
+          text: 'I hope we One on One Again!',
           createdAt: new Date(Date.UTC(2016, 7, 30, 17, 20, 0)),
           user: {
             _id: 2,
             name: 'React Native',
             avatar: 'https://facebook.github.io/react/img/logo_og.png',
           },
+        },
+        {
+          _id: 3,
+          text: 'You don\'t know me too well, but my name is blank.',
+          createdAt: new Date(Date.UTC(2016, 7, 30, 17, 20, 0)),
+          user: {
+            _id: 2,
+            name: 'React Native',
+            avatar: 'https://facebook.github.io/react/img/logo_og.png',
+          },
+        },
+          {
+            _id: 2,
+            text: 'It\'s nice to meet you.',
+            createdAt: new Date(Date.UTC(2016, 7, 30, 17, 20, 0)),
+            user: {
+              _id: 2,
+              name: 'React Native',
+              avatar: 'https://facebook.github.io/react/img/logo_og.png',
+            },
+          },
+          {
+            _id: 1,
+            text: 'Hello DuckHacks!',
+            createdAt: new Date(Date.UTC(2016, 7, 30, 17, 20, 0)),
+            user: {
+              _id: 2,
+              name: 'React Native',
+              avatar: 'https://facebook.github.io/react/img/logo_og.png',
+            },
         },
       ],
     });
