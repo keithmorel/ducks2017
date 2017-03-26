@@ -18,22 +18,32 @@ export default class ChatroomCom extends Component {
     this.setState({
       messages: [
         {
-          _id: 4,
-          text: 'I hope we One on One Again!',
+          _id: 5,
+          text: 'I know, I\'m a huge nerd... What are some of your interests?',
           createdAt: new Date(Date.UTC(2017, 3, 26, 18, 30, 0)),
           user: {
             _id: 2,
-            name: 'React Native',
+            name: 'Alan Turing',
             avatar: 'https://facebook.github.io/react/img/logo_og.png',
           },
         },
         {
+        _id: 4,
+        text: 'Some of my interests are mathematics, Turing machines, cryptography and theoretical biology!',
+        createdAt: new Date(Date.UTC(2017, 3, 26, 18, 30, 0)),
+        user: {
+          _id: 2,
+          name: 'Alan Turing',
+          avatar: 'https://facebook.github.io/react/img/logo_og.png',
+        },
+        },
+        {
           _id: 3,
-          text: 'You don\'t know me too well, but my name is blank.',
+          text: 'You don\'t know me too well, but my name is Alan Turing.',
           createdAt: new Date(Date.UTC(2017, 3, 26, 18, 30, 0)),
           user: {
             _id: 2,
-            name: 'React Native',
+            name: 'Alan Turing',
             avatar: 'https://facebook.github.io/react/img/logo_og.png',
           },
         },
@@ -43,7 +53,7 @@ export default class ChatroomCom extends Component {
             createdAt: new Date(Date.UTC(2017, 3, 26, 18, 30, 0)),
             user: {
               _id: 2,
-              name: 'React Native',
+              name: 'Alan Turing',
               avatar: 'https://facebook.github.io/react/img/logo_og.png',
             },
           },
@@ -53,7 +63,7 @@ export default class ChatroomCom extends Component {
             createdAt: new Date(Date.UTC(2017, 3, 26, 18, 30, 0)),
             user: {
               _id: 2,
-              name: 'React Native',
+              name: 'Alan Turing',
               avatar: 'https://facebook.github.io/react/img/logo_og.png',
             },
         },
