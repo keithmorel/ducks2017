@@ -7,8 +7,8 @@ import {
 
 // Component inputs
 import TestCom from './components/TestCom/TestCom';
-import CompassCom from './components/CompassCom/CompassCom';
 import ChatroomCom from './components/ChatroomCom/ChatroomCom';
+import StartCom from './components/StartCom/StartCom'
 const styles = require('./styles.js')
 const constants = styles.constants;
 
@@ -16,8 +16,8 @@ export default class ducks2017 extends Component {
 
   renderScene (route, navigator) {
     switch(route.id) {
-      case 'TestCom':
-        return (<TestCom navigator={navigator} title="Home Screen" />)
+      case 'StartCom':
+        return (<StartCom navigator={navigator} title="Home Screen" />)
       case 'ChatroomCom':
         return (<ChatroomCom navigator={navigator} title="Chat" />)
     }
@@ -26,7 +26,7 @@ export default class ducks2017 extends Component {
   render() {
     return (
       <Navigator
-        initialRoute={{id: 'TestCom'}}
+        initialRoute={{id: 'StartCom'}}
         renderScene={this.renderScene}
         configureScreen={(route, routeStack) => Navigator.SceneConfigs.FloatFromBottom}
       />
