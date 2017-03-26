@@ -1,5 +1,4 @@
 // Default React Imports
-import * as firebase from 'firebase'
 import React, { Component } from 'react';
 import {
   AppRegistry,
