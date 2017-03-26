@@ -4,15 +4,34 @@ import {
   Image,
   View,
   Text,
+  Switch,
   StyleSheet
 } from 'react-native';
 
 export default class TestCom extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      num: 1,
+      switchValue: false
+    };
+  }
+
+  onSwitchChange(value) {
+    this.props.navigator.push({
+      id: 'ChatroomCom',
+      value: value
+    })
+  }
+
   render() {
     return (
       <View style={styles.container}>
         <Image source={require('./img/doc.png')}/>
-        <Text style={styles.welcome}>Hello!</Text>
+        <Switch
+          value={this.state.switchValue}
+          onValueChange={(value) => this.onSwitchChange(value)} />
+        <Button title='Video' onPress={this.onPress(title)}
       </View>
     );
   }
