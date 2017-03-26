@@ -4,6 +4,7 @@ import {
   Image,
   View,
   Text,
+  Button,
   Switch,
   StyleSheet
 } from 'react-native';
@@ -15,6 +16,13 @@ export default class TestCom extends Component {
       num: 1,
       switchValue: false
     };
+  }
+
+  onPress(title) {
+    this.props.navigator.push({
+      id: 'ChatroomCom',
+      value: title
+    })
   }
 
   onSwitchChange(value) {
@@ -31,7 +39,7 @@ export default class TestCom extends Component {
         <Switch
           value={this.state.switchValue}
           onValueChange={(value) => this.onSwitchChange(value)} />
-        <Button title='Video' onPress={this.onPress(title)}
+        <Button title='Video' onPress={(title) => this.onPress(title)} />
       </View>
     );
   }
