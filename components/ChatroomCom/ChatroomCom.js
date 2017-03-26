@@ -20,7 +20,7 @@ export default class ChatroomCom extends Component {
         {
           _id: 4,
           text: 'I hope we One on One Again!',
-          createdAt: new Date(Date.UTC(2016, 7, 30, 17, 20, 0)),
+          createdAt: new Date(Date.UTC(2017, 3, 26, 18, 30, 0)),
           user: {
             _id: 2,
             name: 'React Native',
@@ -30,7 +30,7 @@ export default class ChatroomCom extends Component {
         {
           _id: 3,
           text: 'You don\'t know me too well, but my name is blank.',
-          createdAt: new Date(Date.UTC(2016, 7, 30, 17, 20, 0)),
+          createdAt: new Date(Date.UTC(2017, 3, 26, 18, 30, 0)),
           user: {
             _id: 2,
             name: 'React Native',
@@ -40,7 +40,7 @@ export default class ChatroomCom extends Component {
           {
             _id: 2,
             text: 'It\'s nice to meet you.',
-            createdAt: new Date(Date.UTC(2016, 7, 30, 17, 20, 0)),
+            createdAt: new Date(Date.UTC(2017, 3, 26, 18, 30, 0)),
             user: {
               _id: 2,
               name: 'React Native',
@@ -50,7 +50,7 @@ export default class ChatroomCom extends Component {
           {
             _id: 1,
             text: 'Hello DuckHacks!',
-            createdAt: new Date(Date.UTC(2016, 7, 30, 17, 20, 0)),
+            createdAt: new Date(Date.UTC(2017, 3, 26, 18, 30, 0)),
             user: {
               _id: 2,
               name: 'React Native',
