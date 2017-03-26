@@ -39,7 +39,7 @@ export default class TestCom extends Component {
         <Switch
           value={this.state.switchValue}
           onValueChange={(value) => this.onSwitchChange(value)} />
-        <Button title='Video' onPress={(title) => this.onPress(title)} />
+        <Button title='Video' onPress={(title) => this.onPress(title)} />        
       </View>
     );
   }
